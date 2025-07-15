@@ -54,3 +54,13 @@ p {
     font-size: 40px !important;
 }
 /* swiper */
+
+/* flavor */
+.flavor__item img {
+    @apply duration-700;
+}
+
+.flavor__item:hover img {
+    @apply scale-110;
+}
+/* flavor */
