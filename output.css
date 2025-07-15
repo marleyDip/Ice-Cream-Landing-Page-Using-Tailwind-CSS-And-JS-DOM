@@ -1310,6 +1310,10 @@ p{
     width: 5rem;
   }
 
+  .lg\:w-full{
+    width: 100%;
+  }
+
   .lg\:max-w-lg{
     max-width: 32rem;
   }
@@ -1350,6 +1354,10 @@ p{
 
   .xl\:left-40{
     left: 10rem;
+  }
+
+  .xl\:-mt-20{
+    margin-top: -5rem;
   }
 
   .xl\:max-w-xl{
