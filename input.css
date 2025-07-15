@@ -46,3 +46,11 @@ p {
     @apply text-firstcolor;
 }
 /* nav menu */
+
+/* swiper */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    @apply text-firstcolor font-bold;
+    font-size: 40px !important;
+}
+/* swiper */
