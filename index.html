@@ -28,7 +28,105 @@
   </head>
   <body>
     <!--~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~-->
-    <header id="navbar"></header>
+    <header id="navbar" class="fixed bg-white top-0 left-0 z-10 w-full">
+      <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <!-- hamburger -->
+        <div class="text-xl cursor-pointer sm:text-2xl lg:hidden">
+          <i class="ri-menu-4-line" id="hamburger"></i>
+        </div>
+        <!-- hamburger -->
+
+        <!-- logo -->
+        <img src="assets/images/logo.png" alt="logo" class="w-28 md:w-44" />
+        <!-- logo -->
+
+        <!-- menu items => mobile & desktop -->
+        <div
+          id="nav-menu"
+          class="bg-white absolute left-[-100%] top-0 min-h-[80vh] w-full border-b border-emerald-800 px-5 duration-500 ease-out overflow-hidden z-20 md:px-10 md:w-1/2 lg:static lg:border-0 lg:min-h-fit lg:w-auto lg:bg-transparent"
+        >
+          <!-- menu list -->
+          <ul class="flex flex-col items-start gap-8 pt-20 lg:pt-0 lg:flex-row">
+            <li>
+              <a href="#home" class="nav-link active">home</a>
+            </li>
+
+            <li>
+              <a href="#shop" class="nav-link">Shop</a>
+            </li>
+
+            <li>
+              <a href="#ingredients" class="nav-link">Ingredients</a>
+            </li>
+
+            <li>
+              <a href="#blogs" class="nav-link">Blogs</a>
+            </li>
+          </ul>
+          <!-- menu list -->
+
+          <!-- close icon -->
+          <div
+            class="text-xl absolute top-5 right-5 cursor-pointer sm:text-2xl lg:hidden"
+          >
+            <i class="ri-close-large-line" id="closeicon"></i>
+          </div>
+          <!-- close icon -->
+
+          <!-- search, user, cart icon -->
+          <div
+            class="flex items-center gap-5 text-xl cursor-pointer pt-20 sm:text-2xl lg:hidden"
+          >
+            <i class="ri-search-line"></i>
+
+            <i class="ri-user-line"></i>
+
+            <!-- whitelist -->
+            <div class="relative">
+              <i class="ri-heart-line"></i>
+              <span
+                class="font-bold absolute top-0 left-4 bg-firstcolor text-white text-xs w-5 h-5 rounded-full grid place-items-center"
+                >0</span
+              >
+            </div>
+            <!-- whitelist -->
+          </div>
+          <!-- search, user, cart icon -->
+        </div>
+        <!-- menu items => mobile & desktop -->
+
+        <!-- desktop right side -->
+        <!-- search, user, cart icon -->
+        <div class="flex items-center gap-5 text-xl cursor-pointer sm:text-2xl">
+          <i class="hidden lg:block ri-search-line"></i>
+
+          <i class="hidden lg:block ri-user-line"></i>
+
+          <!-- whitelist -->
+          <div class="hidden lg:block relative">
+            <i class="ri-heart-line"></i>
+            <span
+              class="font-bold absolute top-0 left-4 bg-firstcolor text-white text-xs w-5 h-5 rounded-full grid place-items-center"
+              >0</span
+            >
+          </div>
+          <!-- whitelist -->
+
+          <!-- shopping cart -->
+          <div class="relative">
+            <i class="ri-shopping-cart-line"></i>
+
+            <span
+              class="font-bold absolute top-0 left-4 bg-firstcolor text-white text-xs w-5 h-5 rounded-full grid place-items-center"
+              >0</span
+            >
+          </div>
+          <!-- shopping cart -->
+        </div>
+        <!-- search, user, cart icon -->
+        <!-- desktop right side -->
+      </nav>
+    </header>
     <!--~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~-->
 
     <!--~~~~~~~~~~~~~~~ HERO ~~~~~~~~~~~~~~~-->

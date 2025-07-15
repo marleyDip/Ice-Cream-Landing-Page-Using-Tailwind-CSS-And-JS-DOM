@@ -4,3 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    @apply bg-yellow-100;
+}
+
+body {
+    @apply bg-white tracking-wider max-w-[1920px] mx-auto;
+}
+
+
+/* nav menu */
+.nav-link {
+    @apply text-xl font-bold duration-300;
+}
+
+.nav-link:hover,
+.active {
+    @apply text-firstcolor;
+}
+/* nav menu */
