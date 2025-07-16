@@ -121,4 +121,69 @@ window.addEventListener("scroll", scrollHeader);
 /*~~~~~~~~~~~~~~~ CHANGE BACKGROUND HEADER ~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~ SCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 1500,
+  delay: 300,
+  reset: true,
+});
+
+// hero
+sr.reveal(".hero_outline_1, .hero_outline_2", {
+  scale: 0.5,
+  distance: "0px",
+  delay: 1000,
+});
+
+sr.reveal(".hero_leaf_1, .hero_leaf_2", {
+  origin: "right",
+  delay: 1500,
+});
+sr.reveal(".hero_leaf_3", {
+  origin: "left",
+  delay: 1500,
+});
+sr.reveal(".hero_leaf_4", {
+  origin: "bottom",
+  delay: 1500,
+});
+// hero
+
+// hero, ingredients, blog, newsletter
+sr.reveal(".hero_top, .ingredients_top, .blog_top, .blog_btn, .newsletter");
+// hero, ingredients, blog, newsletter
+
+// hero, promo
+sr.reveal(".hero_image, .promo_image", {
+  scale: 0.5,
+});
+// hero, promo
+
+// feature
+sr.reveal(".feature_left, .promo_content", {
+  origin: "left",
+});
+sr.reveal(".feature_right", {
+  origin: "right",
+});
+// feature
+
+// ingredients
+sr.reveal(".ingredients_item_left", {
+  origin: "left",
+  delay: 100,
+});
+sr.reveal(".ingredients_item_right", {
+  origin: "right",
+  delay: 100,
+});
+// ingredients
+
+// flavor, blog
+sr.reveal(".flavor__item, .blog_item", {
+  interval: 100,
+});
+// flavor, blog
+
 /*~~~~~~~~~~~~~~~ SCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~*/
