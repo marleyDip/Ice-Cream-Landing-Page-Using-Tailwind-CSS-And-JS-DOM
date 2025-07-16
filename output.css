@@ -726,6 +726,10 @@ video {
   display: none;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-16{
   height: 4rem;
 }
@@ -734,12 +738,12 @@ video {
   height: 1.25rem;
 }
 
-.h-12{
-  height: 3rem;
-}
-
 .min-h-\[80vh\]{
   min-height: 80vh;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-14{
@@ -764,10 +768,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-12{
-  width: 3rem;
 }
 
 .min-w-max{
@@ -926,6 +926,21 @@ video {
   background-color: rgb(255 243 225 / var(--tw-bg-opacity, 1));
 }
 
+.bg-cardcolor_2{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 228 233 / var(--tw-bg-opacity, 1));
+}
+
+.bg-cardcolor_3{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 237 186 / var(--tw-bg-opacity, 1));
+}
+
+.bg-cardcolor_4{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 214 192 / var(--tw-bg-opacity, 1));
+}
+
 .bg-emerald-800{
   --tw-bg-opacity: 1;
   background-color: rgb(6 95 70 / var(--tw-bg-opacity, 1));
@@ -944,21 +959,6 @@ video {
 .bg-yellow-300{
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
-}
-
-.bg-cardcolor_2{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 228 233 / var(--tw-bg-opacity, 1));
-}
-
-.bg-cardcolor_3{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 237 186 / var(--tw-bg-opacity, 1));
-}
-
-.bg-cardcolor_4{
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 214 192 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'assets\/images\/promo_bg\.jpg\'\)\]{
@@ -1008,6 +1008,21 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-1{
   padding-bottom: 0.25rem;
 }
@@ -1052,6 +1067,10 @@ video {
   padding-top: 9rem;
 }
 
+.pb-12{
+  padding-bottom: 3rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1068,6 +1087,11 @@ video {
   font-family: Playball, cursive;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1081,11 +1105,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold{
@@ -1362,10 +1381,6 @@ p{
     top: 2.5rem;
   }
 
-  .sm\:mt-2{
-    margin-top: 0.5rem;
-  }
-
   .sm\:mt-20{
     margin-top: 5rem;
   }
@@ -1382,19 +1397,13 @@ p{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .sm\:gap-y-0{
-    row-gap: 0px;
-  }
-
   .sm\:gap-x-10{
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
   }
 
-  .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  .sm\:gap-y-0{
+    row-gap: 0px;
   }
 
   .sm\:text-2xl{
@@ -1430,6 +1439,10 @@ p{
 
   .md\:max-w-md{
     max-width: 28rem;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row{
@@ -1528,6 +1541,10 @@ p{
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
